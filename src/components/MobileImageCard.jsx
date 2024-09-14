@@ -17,7 +17,7 @@ const MobileImageCard = ({ image }) => {
       <div className="pl-4 py-2">
         <p className="text-gray-700 text-sm truncate">{image.name}</p>
         <a
-          href={image.url}
+          href={`https://raw.githubusercontent.com/saumil8200/canva-walls/main/mobile/${image.name}`}
           download={image.name}
           className="text-blue-500 text-sm hover:underline"
         >

@@ -15,9 +15,10 @@ function App() {
     fetch('/canva-walls-frontend/github_images.json')
       .then((response) => response.json())
       .then((data) => {
-        // Set all images and filter them based on the search term
-        setImages(data[view] || []);
-        setFilteredImages(data[view] || []);
+        // Set images for the view, considering compressed sources
+        const sourceKey = view === 'mobile' ? 'compressed_mobile' : 'compressed_desktop';
+        setImages(data[sourceKey] || []);
+        setFilteredImages(data[sourceKey] || []);
       })
       .catch((error) => console.error('Error loading JSON:', error));
   }, [view]);
