@@ -4,8 +4,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 /* eslint-disable react/prop-types */
 const MobileImageCard = ({ image }) => {
   return (
-    <div className="rounded shadow-lg mt-2 w-80 mx-auto">
-      <div className="h-96">
+    <div className="rounded shadow-lg mt-2 mx-auto max-w-xs">
+      <div className="h-96 overflow-hidden">
         <LazyLoadImage
           src={image.url}
           alt={image.name}
@@ -15,7 +15,7 @@ const MobileImageCard = ({ image }) => {
         />
       </div>
       <div className="pl-4 py-2">
-        <p className="text-gray-700 text-sm">{image.name}</p>
+        <p className="text-gray-700 text-sm truncate">{image.name}</p>
         <a
           href={image.url}
           download={image.name}
