@@ -1,0 +1,22 @@
+{
+    "desktop": [
+        {
+            "name": "Wall301",
+            "url": "https://raw.githubusercontent.com/saumil8200/canva-walls/main/desktop/Wall301.png"
+        },
+        {
+            "name": "Wall304",
+            "url": "https://raw.githubusercontent.com/saumil8200/canva-walls/main/desktop/Wall304.png"
+        }
+    ],
+    "mobile": [
+        {
+            "name": "Wall302",
+            "url": "https://raw.githubusercontent.com/saumil8200/canva-walls/main/mobile/Wall302.png"
+        },
+        {
+            "name": "Wall303",
+            "url": "https://raw.githubusercontent.com/saumil8200/canva-walls/main/mobile/Wall303.png"
+        }
+    ]
+}
