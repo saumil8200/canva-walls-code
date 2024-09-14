@@ -43,8 +43,16 @@ function App() {
       <h1 className="text-3xl font-black text-center mb-4">Canva Walls</h1>
       <div className="flex flex-col items-center w-full mb-4">
         <div className="flex mb-4 w-full">
-          <Button label="Desktop" onClick={() => handleViewChange('desktop')} />
-          <Button label="Mobile" onClick={() => handleViewChange('mobile')} />
+          <Button
+            label="Mobile"
+            onClick={() => handleViewChange('mobile')}
+            className={view === 'mobile' ? 'bg-gray-800 text-white' : 'bg-white text-black'}
+          />
+          <Button
+            label="Desktop"
+            onClick={() => handleViewChange('desktop')}
+            className={view === 'desktop' ? 'bg-gray-800 text-white' : 'bg-white text-black'}
+          />
         </div>
         <SearchBar onSearch={handleSearch} />
       </div>

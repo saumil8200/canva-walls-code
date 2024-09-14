@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-const Button = ({ label, onClick }) => {
+const Button = ({ label, onClick, className }) => {
     return (
       <button
         onClick={onClick}
-        className="px-4 mx-2 py-2 bg-black text-white rounded hover:bg-gray-800 w-full"
+        className={`px-4 py-2 w-full rounded focus:outline-none ${className}`}
       >
         {label}
       </button>
@@ -11,3 +11,4 @@ const Button = ({ label, onClick }) => {
   };
   
   export default Button;
+  
