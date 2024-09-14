@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     // Fetch the JSON file from the public folder
-    fetch('/github_images.json')
+    fetch('/canva-walls-frontend/github_images.json')
       .then((response) => response.json())
       .then((data) => {
         // Set all images and filter them based on the search term
